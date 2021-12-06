@@ -36,6 +36,7 @@
 .main-picture-background{
     width: 100%;
     min-height: 100vh;
+    object-fit: cover;
 }
 
 .home-picture-container{
@@ -207,3 +208,40 @@
   #myBtn:hover {
     background-color: #555;
   }
+
+
+
+  @media screen and (max-width: 992px) {
+        .top-container{
+            padding: 0 30px;
+        }
+
+        .main-content-left{
+            grid-template-columns: 1fr;
+        }
+
+        .main-content-right{
+            grid-template-columns: 1fr;
+        }
+
+        .contact-container{
+            grid-template-columns: 1fr;
+            padding: 0 30px;
+        }
+  }
+
+  @media screen and (max-width: 600px) {
+        .menu-bar{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-menu-side{
+            flex-direction: column;
+        }
+
+        .top-icon{
+            display: none;
+        }
+}
+
