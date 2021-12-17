@@ -5,22 +5,6 @@
 
 /*-------top_menu_bar------------------*/
 
-.top-container-background{
-    background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.top-container{
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.menu-bar{
-    display: flex;
-    justify-content: space-between;
-}
-
 .menu-bar-item{
     text-decoration: none;
     color: white;
@@ -28,9 +12,12 @@
 }
 
 .right-menu-side{
+    position: absolute;
     display: flex;
     gap: 20px;
     align-items: center;
+    top: 20px;
+    left: 70%;
 }
 
 .main-picture-background{
@@ -227,6 +214,16 @@
         .contact-container{
             grid-template-columns: 1fr;
             padding: 0 30px;
+        }
+
+        .menu-bar{
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right-menu-side{
+            left: 42%;
+            top: 10px;
         }
   }
 
